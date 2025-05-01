@@ -48,8 +48,6 @@ The way it works is this:
 3. We take the results from both datastores and we merge them together using [Reciprocal Rank Fusion](https://www.elastic.co/guide/en/elasticsearch/reference/current/rrf.html) which provides us with a single list of results
 4. We then take the top 10 results from this list and we pass them to the LLM to generate a response
 
-<sub>Credits: https://github.com/RafalWilinski/cloudflare-rag#hybrid-search-rag</sub>
-
 ## 🚀 Quick Start
 
 1. Install dependencies with [pnpm](https://pnpm.io)
@@ -116,8 +114,3 @@ pnpm dev --remote
 ## 📝 License
 
 Published under the [MIT license](./LICENSE).
-
-## 🙋 Credits
-
-- [cloudflare-rag](https://github.com/RafalWilinski/cloudflare-rag) by [Rafal Wilinski](https://github.com/RafalWilinski) - Chat with PDF is a port of the cloudflare-rag project to NuxtHub and Nuxt UI. The core logic and functionality are derived from cloudflare-rag, adapted to work with NuxtHub.
-- [hub-chat](https://github.com/ra-jeev/hub-chat) by [Rajeev R Sharma](https://github.com/ra-jeev) - Parts of UI and inspiration for the streaming composable.
